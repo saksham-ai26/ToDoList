@@ -1,0 +1,144 @@
+html {
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  background-image: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px);
+  background-position: 0 0, 50px 50px;
+  background-size: 30px 30px;
+  animation: twinklingStars 100s linear infinite;
+}
+
+@keyframes twinklingStars {
+  0%, 100% {
+    background-position: 0 0, 50px 50px;
+
+  }
+  50% {
+    background-position: -2000px 0, -1950px 50px;
+    
+  }
+}
+
+
+h1.first{
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffd650;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  font-family: 'Comic Sans MS', cursive;
+}
+h1 {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#heading {
+  background-color: #E05263;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #E05263;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #E05263;
+  color: #fff;
+  font-size: 24px;
+  padding-bottom: 6px;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  width: 313px;
+  border-bottom: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #E05263;
+}
+
+::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+footer {
+  color: #999;
+  text-align: center;
+  padding: 20px 0;
+}
